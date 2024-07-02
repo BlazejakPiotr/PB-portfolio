@@ -9,9 +9,36 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#07071E",
+              foreground: "#BECCE9",
+              primary: "#E84646",
+              secondary: "#EAF1FF",
+            },
+          },
+        },
+      };
+    </script>
     <title>Piotr Błażejak Web Developer Portfolio</title>
   </head>
-  <body>
-    <p class="text-3xl">Hello world</p>
+  <body class="flex-col flex bg-background text-secondary">
+    <header class="h-16 flex items-center">
+      <nav class="container mx-auto">NAV</nav>
+    </header>
+    <main class="flex-grow">
+      <section class="container mx-auto te">
+        <object
+          data="images/pb_logo.svg"
+          type="image/svg+xml"
+          class="h-[120px]"
+        ></object>
+      </section>
+    </main>
+    <footer>Footer</footer>
   </body>
 </html>
